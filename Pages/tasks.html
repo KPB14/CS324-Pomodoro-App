@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="css/tasks.css">
+</head>
+<body>
+
+    <header>
+        <h1>Task Board</h1>
+        <a href="addtask.html" class="add-task-btn">+ Add Task</a>
+    </header>
+
+    <div class="toolbar">
+        <label for="sort">Sort By:</label>
+
+        <select id="sort">
+            <option value="default">Default</option>
+            <option value="priority">Priority</option>
+            <option value="dueDate">Due Date</option>
+        </select>
+
+        <a href="timer.html" class="focus-btn" id="focusBtn">
+            Start Focus Session
+        </a>
+    </div>
+
+    <main class="board">
+
+        <section class="column">
+            <h2>To Do</h2>
+            <div class="task-list" id="todo"></div>
+        </section>
+
+        <section class="column">
+            <h2>In Progress</h2>
+            <div class="task-list" id="inprogress"></div>
+        </section>
+
+        <section class="column">
+            <h2>Completed</h2>
+            <div class="task-list" id="completed"></div>
+        </section>
+
+    </main>
+
+    <script src="js/tasks.js"></script>
+</body>
+</html>

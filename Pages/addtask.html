@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="css/addtask.css">
+</head>
+<body>
+
+    <div class="task-container">
+        <h1>Add Task</h1>
+
+        <form id="taskForm">
+
+            <label for="title">Task Name:</label>
+            <input type="text" id="title" required>
+
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate">
+
+            <button type="submit">Create Task</button>
+
+        </form>
+
+        <a href="tasks.html">Cancel</a>
+    </div>
+
+    <script src="js/tasks.js"></script>
+</body>
+</html>
