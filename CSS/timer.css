@@ -1,0 +1,41 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+.timer-area {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
